@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="68" failures="0" name="com.ef.TopLevelSuite" time="0.062" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.172-12.b11.fc28.x86_64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.172-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/helbert/Desen/project/wallethub"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/helbert/Desen/project/wallethub"/>
+    <property name="java.runtime.version" value="1.8.0_172-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.172-12.b11.fc28.x86_64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/usr/share/maven/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.17.7-200.fc28.x86_64"/>
+    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
+    <property name="user.home" value="/home/helbert"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="helbert"/>
+    <property name="java.class.path" value="/usr/share/java/plexus-classworlds.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.172-12.b11.fc28.x86_64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_172"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.172-12.b11.fc28.x86_64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.172-12.b11.fc28.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.172-12.b11.fc28.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.172-12.b11.fc28.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.172-12.b11.fc28.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.172-12.b11.fc28.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.172-12.b11.fc28.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.172-12.b11.fc28.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.172-12.b11.fc28.x86_64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.ef.inputs.ConverterAndValidateStartDateTest" name="testInvalidDateApril31" time="0.008"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateStartDateTest" name="testInvalidHour" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateStartDateTest" name="testInvalidDateFebruary29" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateStartDateTest" name="testInvalidDateFebruary30" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateStartDateTest" name="testEmpty" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateStartDateTest" name="testNull" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateStartDateTest" name="testInvalidDayZero" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateStartDateTest" name="testInvalidMinute" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateStartDateTest" name="testInvalidSecond" time="0.001"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateStartDateTest" name="testInvalidString" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateStartDateTest" name="testInvalidOnlyDate" time="0.002"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateStartDateTest" name="testInvalidOnlyTime" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateStartDateTest" name="testInvalidMonthZero" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateStartDateTest" name="testInvalidMonth" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateStartDateTest" name="testValidDateOK1" time="0.002"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateStartDateTest" name="testValidDateOK2" time="0.001"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateStartDateTest" name="testInvalidDay" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateStartDateTest" name="testInvalidYearZero1" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateStartDateTest" name="testInvalidYearZero2" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateStartDateTest" name="testInvalidYearZero3" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateStartDateTest" name="testInvalidFormat1" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateStartDateTest" name="testInvalidFormat2" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateDurationTest" name="testEmpty" time="0.001"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateDurationTest" name="testNull" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateDurationTest" name="testIInvalidHourlyCase" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateDurationTest" name="testInValidDailyCase" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateDurationTest" name="testInValidDailyUpperCase" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateDurationTest" name="testIValidHourly" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateDurationTest" name="testIValidDaily" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateDurationTest" name="testInvalid" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateDurationTest" name="testIInvalidHourlyUpperCase" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateThresholdTest" name="testInvalidWord" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateThresholdTest" name="testOne" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateThresholdTest" name="testSum" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateThresholdTest" name="testTen" time="0.001"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateThresholdTest" name="testEmpty" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateThresholdTest" name="testNull" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateThresholdTest" name="testZero" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateThresholdTest" name="testRacional" time="0.001"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateThresholdTest" name="testMillion" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateThresholdTest" name="testHundred" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateThresholdTest" name="testNegative" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateThresholdTest" name="testThousand" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateFilePathTest" name="testEmpty" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateFilePathTest" name="testValid" time="0.005"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateFilePathTest" name="testNull" time="0"/>
+  <testcase classname="com.ef.inputs.ConverterAndValidateFilePathTest" name="testFileNotExists" time="0.001"/>
+  <testcase classname="com.ef.inputs.InputHandlerTest" name="testWithoutDuration" time="0.009"/>
+  <testcase classname="com.ef.inputs.InputHandlerTest" name="testEmpty" time="0"/>
+  <testcase classname="com.ef.inputs.InputHandlerTest" name="testNull" time="0"/>
+  <testcase classname="com.ef.inputs.InputHandlerTest" name="testWithoutStartDate" time="0"/>
+  <testcase classname="com.ef.inputs.InputHandlerTest" name="testWithoutFilePath" time="0"/>
+  <testcase classname="com.ef.inputs.InputHandlerTest" name="testWithoutThreshold" time="0.001"/>
+  <testcase classname="com.ef.inputs.InputHandlerTest" name="testAllAtributes" time="0.001"/>
+  <testcase classname="com.ef.file.FileReaderTest" name="testErrorLine10" time="0.014"/>
+  <testcase classname="com.ef.file.FileReaderTest" name="testErrorLine11" time="0.002"/>
+  <testcase classname="com.ef.file.FileReaderTest" name="testErrorLine12" time="0.001"/>
+  <testcase classname="com.ef.file.FileReaderTest" name="testEmpty" time="0.001"/>
+  <testcase classname="com.ef.file.FileReaderTest" name="testOK" time="0.001"/>
+  <testcase classname="com.ef.file.FileReaderTest" name="testErrorLine1" time="0.001"/>
+  <testcase classname="com.ef.file.FileReaderTest" name="testErrorLine2" time="0.001"/>
+  <testcase classname="com.ef.file.FileReaderTest" name="testErrorLine3" time="0.001"/>
+  <testcase classname="com.ef.file.FileReaderTest" name="testErrorLine4" time="0.001"/>
+  <testcase classname="com.ef.file.FileReaderTest" name="testErrorLine5" time="0.001"/>
+  <testcase classname="com.ef.file.FileReaderTest" name="testErrorLine6" time="0.001"/>
+  <testcase classname="com.ef.file.FileReaderTest" name="testErrorLine7" time="0.001"/>
+  <testcase classname="com.ef.file.FileReaderTest" name="testErrorLine8" time="0.001"/>
+  <testcase classname="com.ef.file.FileReaderTest" name="testErrorLine9" time="0.001"/>
+</testsuite>
