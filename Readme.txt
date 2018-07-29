@@ -18,6 +18,8 @@
 
 (2) Source Code for the Java program
 
+    It is in file whub-parser-master.zip or git clone https://github.com/helbertrios/whub-parser.git
+
 (3) MySQL schema used for the log data
     
    It is in file "data.sql"
