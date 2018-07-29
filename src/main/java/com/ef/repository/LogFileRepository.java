@@ -73,7 +73,8 @@ public class LogFileRepository {
 				LogFile result = new LogFile();		
 				result.setId(rs.getLong(1));
 								
-				result.setImportDate(rs.getTimestamp(2).toLocalDateTime());
+				
+				result.setImportDate(Utils.getLocalDateTime(rs.getTimestamp(2)));
 				result.setFilePath(rs.getString(3));				
 				result.setFileHash(rs.getString(4));
 				result.setImportCompleted(rs.getBoolean(5));

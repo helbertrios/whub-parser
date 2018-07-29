@@ -3,7 +3,6 @@ package com.ef.repository;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 import com.ef.repository.to.Duration;
@@ -48,18 +47,19 @@ public class OrderBlockRepository {
 			){			
 
 			if (rs != null && rs.next()) {
-															
+												
+				
 				result = new OrderBlock();
 				result.setId(rs.getLong(1));
-				result.setOrderDate(rs.getTimestamp(2).toLocalDateTime());
-				result.setStartDate(rs.getTimestamp(3).toLocalDateTime());
-				result.setDuration(Duration.getDurationByKey(rs.getString(4).charAt(0)));
+				result.setOrderDate(Utils.getLocalDateTime(rs.getTimestamp(2)));
+				result.setStartDate(Utils.getLocalDateTime(rs.getTimestamp(3)));
+				result.setDuration(Utils.getDuration(rs.getString(4)));
 				result.setThreshold(rs.getLong(5));
 				result.setOrderCompleted(rs.getBoolean(6));
 				
 				result.setLogFile(new LogFile()); 
 				result.getLogFile().setId(rs.getLong(7));
-				result.getLogFile().setImportDate(rs.getTimestamp(8).toLocalDateTime());
+				result.getLogFile().setImportDate(Utils.getLocalDateTime(rs.getTimestamp(8)));
 				result.getLogFile().setFilePath(rs.getString(9));				
 				result.getLogFile().setFileHash(rs.getString(10));
 				result.getLogFile().setImportCompleted(rs.getBoolean(11));
@@ -98,10 +98,9 @@ public class OrderBlockRepository {
 	}
 	
 	private PreparedStatement createPreparedStatementInsertOrderBlock(final LocalDateTime startDate, final Duration duration,  final Long treshold, final Long idFileLog) throws SQLException {
-		final PreparedStatement stmt =   ConnectionFactory.getInstance().getConnection().prepareStatement(INSERT_ORDER_BLOCK, PreparedStatement.RETURN_GENERATED_KEYS);
-		Timestamp ts = Timestamp.valueOf(startDate);
-		stmt.setTimestamp(1, ts);
-		stmt.setString(2, String.valueOf(duration.getKey()));
+		final PreparedStatement stmt =   ConnectionFactory.getInstance().getConnection().prepareStatement(INSERT_ORDER_BLOCK, PreparedStatement.RETURN_GENERATED_KEYS);	
+		stmt.setTimestamp(1, Utils.getTimestamp(startDate));
+		stmt.setString(2, Utils.getDurationString(duration));
 		stmt.setLong(3, treshold);
 		stmt.setLong(4, idFileLog);
 		stmt.executeUpdate();

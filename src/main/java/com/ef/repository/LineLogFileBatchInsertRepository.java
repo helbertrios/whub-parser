@@ -2,7 +2,6 @@ package com.ef.repository;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 public class LineLogFileBatchInsertRepository implements AutoCloseable {
@@ -85,11 +84,9 @@ public class LineLogFileBatchInsertRepository implements AutoCloseable {
 	
 	
 	private void executePreparedStatementInsertLogFile(final Integer lineNumber, final LocalDateTime accessDate, final String ip, final String action, final Integer code, final String accessInformation, final String source, final Long idLogFile) throws SQLException {
-				
-		Timestamp tsAccessDate = Timestamp.valueOf(accessDate);
-		
+			
 		insertStmt.setInt(1, lineNumber);
-		insertStmt.setTimestamp(2, tsAccessDate);
+		insertStmt.setTimestamp(2, Utils.getTimestamp(accessDate));
 		insertStmt.setString(3, ip);
 		insertStmt.setString(4, action);
 		insertStmt.setInt(5, lineNumber);
