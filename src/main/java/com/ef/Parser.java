@@ -42,7 +42,7 @@ public class Parser {
 
 	private void mainFlow(final String[] args) {
 		
-	
+
 		ParserLogger.getLogger().info("I will extract the received parameters.");		
 		final InputHandler inputHandler = new InputHandler();
 		final InputData inputData = inputHandler.extractParameters(args);
